@@ -24,12 +24,12 @@ function App() {
       setError(err.message);
       setUserData(null);
     } finally {
-      setLoading(false); // 🔴 Stop loader
+      setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-start pt-12 px-4">
+    <div className="min-h-screen bg-gray-200 flex flex-col items-center justify-start pt-12 px-4">
       <h1 className="text-4xl font-bold text-blue-600 mb-8">
         GitHub User Finder
       </h1>
@@ -40,7 +40,7 @@ function App() {
           placeholder="Enter GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="bg-white w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <button
@@ -60,3 +60,4 @@ function App() {
 }
 
 export default App;
+
